@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chloe's Amazing Website</title>
+
+        <style>
+    body {
+        background: darkmagenta;
+        color: black;
+        padding: 10px;
+        font-family: sans-serif;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: gold;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+        border-radius: 5px 50px 50px 5px;
+        border: 5px gold outset;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: black;
+        flex: 1;
+        margin: 0;
+
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+        text-decoration: underline;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: thistle;
+        display: flex;
+        border-radius: 5px;
+        border: 5px gold solid;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+        border: 5px gold inset;
+        border-radius: 5px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 5px gold outset;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
+    </head>
+    
+    <body>
+        <!-- All content goes here -->
+        <div id="all-contents">
+            <nav>
+                <h1>Chloe's Amazing Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+               <!-- Sidebar section--> 
+               <div class="sidebar">
+                   <img class="sidebar-img" src="https://www.stmarynow.com/sites/stmarynow.etypegoogle8.com/files/styles/large/public/field/image/1116-som.jpg?itok=19Fp4wU7">
+               </div>
+
+               <!-- Content section-->
+               <div class="content">
+                   <h2>Chloe Lanclos</h2>
+
+                   <p>Student at Centerville High School</p>
+
+                   <!-- Interest section -->
+                   <div id="interests">
+                       <h3>Interests</h3>
+                       <ul>
+                           <li>Books</li>
+                           <li>Animals</li>
+                           <li>Dance</li>
+                       </ul>
+                   </div>
+               </div>
+            </main>
+        </div>
+    </body>
+</html>
