@@ -116,8 +116,17 @@
                 } else if (speed < 0) {
                     speed = speed - 3;
                 }
+                
+                var ranNum1 = Math.random() * 255;
+                var ranNum2 = Math.random() * 255;
+                var ranNum3 = Math.random() * 255;
+                var colorStr = "rgb(" + ranNum1 + ", " + ranNum2 + ", " + ranNum3 + ")";
+                getRandomColor(colorStr)   
 
-			};
+            };
+            function getRandomColor(colorStr) {
+                    box.css('background-color', colorStr);
+                }
 		})();
 	</script>
 </body>
